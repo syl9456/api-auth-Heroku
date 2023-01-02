@@ -6,8 +6,15 @@ const dbConfig = require("./config/db.config.js");
 const Role = db.role;
 
 
+const corsOptions = {
+  origin: "*",
+  method: "*",
+  allowedHeaders: "*",
+  optionsSuccessStatus: 200
+};
+
 // On autorise les connexions cross-domain (CORS)
-app.use(cors());
+app.use(cors(corsOptions));
 
 // parse requests of content-type - application/json
 app.use(express.json());
