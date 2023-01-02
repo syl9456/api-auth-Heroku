@@ -48,7 +48,8 @@ require("./routes/auth.routes")(app);
 require("./routes/user.routes")(app);
 
 // initialisation des ports et du serveur
-const port = process.env.port || 8020;
+let port = process.env.PORT || 8020;
+
 app.listen(port, () => {
   console.log('Serveur démarré sur http://localhost:' + port);
 });
