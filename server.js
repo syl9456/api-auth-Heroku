@@ -7,7 +7,7 @@ const Role = db.role;
 
 
 var corsOptions = {
-  origin: "https://assignment-app-heroku.herokuapp.com/"
+  origin: "https://assignment-app-heroku.herokuapp.com"
 };
 
 // On autorise les connexions cross-domain (CORS)
